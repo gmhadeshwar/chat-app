@@ -10,6 +10,4 @@ server.listen(9000, () => console.log('Server Started at 9000'));
 
 app.use(express.static(path.resolve("./public")));
 
-app.get("/", (req, res)=> {
-    return res.sendFile("/public/index.html");
-});
+app.get("/", (req, res)=> {return res.sendFile("/public/index.html");});
